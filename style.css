@@ -1084,125 +1084,48 @@ width:auto;
 margin-right:8px;
 }
 
-/* =========================
-   MOBILE RESPONSIVE DESIGN
-   ========================= */
+@media screen and (max-width:768px){
 
-@media (max-width: 768px) {
-
-    header{
-        flex-direction: column;
-        padding: 15px;
-        text-align: center;
-    }
-
-    .logo-container{
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .logo{
-        width: 60px;
-        height: 60px;
-    }
-
-    .logo-container h2{
-        font-size: 18px;
-    }
-
-    .nav-links{
-        flex-direction: column;
-        gap: 12px;
-        margin-top: 15px;
-    }
-
-    .hero{
-        height: auto;
-        padding: 120px 20px 80px;
-    }
-
-    .hero-content h1{
-        font-size: 32px;
-        line-height: 1.3;
-    }
-
-    .hero-content p{
-        font-size: 16px;
-    }
-
-    .section-title{
-        font-size: 28px;
-    }
-
-    .service-grid,
-    .project-grid,
-    .contact-grid,
-    .counter-section{
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 20px;
-    }
-
-    .service-card,
-    .project-card,
-    .contact-card,
-    .counter-box{
-        width: 100%;
-    }
-
-    .project-card img{
-        width: 100%;
-        height: auto;
-    }
-
-    .contact-form-container{
-        width: 95%;
-        margin: auto;
-    }
-
-    input,
-    select,
-    textarea{
-        width: 100%;
-        font-size: 16px;
-    }
-
-    .btn{
-        width: 100%;
-        text-align: center;
-    }
-
-    footer{
-        padding: 30px 15px;
-        text-align: center;
-    }
-
-    .whatsapp{
-        width: 55px;
-        height: 55px;
-        font-size: 26px;
-        right: 15px;
-        bottom: 15px;
-    }
+header{
+    flex-direction:column;
+    padding:15px;
+    height:auto;
 }
 
-/* SMALL PHONES */
+.logo-container{
+    flex-direction:column;
+    text-align:center;
+}
 
-@media (max-width: 480px){
+.nav-links{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:12px;
+    margin-top:15px;
+}
 
-    .hero-content h1{
-        font-size: 26px;
-    }
+.nav-links a{
+    font-size:16px;
+}
 
-    .hero-content p{
-        font-size: 14px;
-    }
+.hero{
+    min-height:100vh;
+    padding-top:280px; /* Important */
+    background-attachment:scroll;
+}
 
-    .section-title{
-        font-size: 24px;
-    }
+.hero-content{
+    margin-top:40px;
+    padding:20px;
+}
 
-    .logo-container h2{
-        font-size: 16px;
-    }
+.hero-content h1{
+    font-size:28px;
+    line-height:1.3;
+}
+
+.hero-content p{
+    font-size:15px;
+}
 }
