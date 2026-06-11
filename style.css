@@ -88,38 +88,20 @@ section:first-child{
 
 @media screen and (max-width:768px){
 
-.menu-toggle{
-        display:block;
-    }
-
-header{
-    height:180px;
-    flex-direction:column;
-    justify-content:flex-end;
-   padding:0 15px;
-    padding-bottom:15px;
-}
-
 .logo{
-    width:160px;
-   height:auto;
-    top:-80px;
-    left:50%;
-    transform:translateX(-50%);
+    width:140px;
+    height:auto;
+    position:static;
+    display:block;
+    margin:0 auto;
+    transform:none;
 }
 
-.nav-links{
-    gap:12px;
-    flex-wrap:wrap;
+.logo-container{
+    display:flex;
     justify-content:center;
-}
-
-.nav-links a{
-    font-size:14px;
-}
-
-.hero{
-    padding-top:160px;
+    align-items:center;
+    width:100%;
 }
 
 }
