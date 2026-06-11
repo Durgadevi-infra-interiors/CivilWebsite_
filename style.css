@@ -197,6 +197,39 @@ color:#d4a54c !important;
 /* ==========================
    HERO
 ========================== */
+
+/* HERO */
+
+.hero{
+    min-height:100vh;
+
+    background:
+    linear-gradient(
+        rgba(0,0,0,0.45),
+        rgba(0,0,0,0.45)
+    ),
+    url("images/background.jpeg");
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+}
+
+/* MOBILE ONLY */
+
+@media(max-width:768px){
+
+.hero{
+    padding-top:220px;
+}
+
+}
 @media(max-width:768px){
 .hero{
     min-height:100vh;
