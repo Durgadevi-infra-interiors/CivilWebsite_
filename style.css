@@ -165,19 +165,18 @@ color:#d4a54c !important;
 ========================== */
 
 .hero{
-    height:100vh;
+    min-height:100vh;
 
     background:
     linear-gradient(
-        rgba(0,0,0,0.60),
-        rgba(0,0,0,0.60)
+        rgba(0,0,0,0.45),
+        rgba(0,0,0,0.45)
     ),
-    url("images/banner.jpg");
+    url("images/background.jpg");
 
     background-size:cover;
     background-position:center;
     background-repeat:no-repeat;
-    background-attachment:fixed;
 
     display:flex;
     justify-content:center;
