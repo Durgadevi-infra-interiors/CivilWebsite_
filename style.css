@@ -14,7 +14,7 @@ body{
     background:#061324;
     color:#fff;
     overflow-x:hidden;
-    padding-top:90px; /* same as header height */
+    padding-top:0;
 }
 
 /* ==========================
@@ -215,7 +215,8 @@ color:#d4a54c !important;
 }
 
 .hero{
-    min-height:100vh;
+    margin-top:90px; /* header height */
+    min-height:calc(100vh - 90px);
 
     background:
     linear-gradient(
@@ -1192,7 +1193,7 @@ header{
 
 .hero{
     min-height:100vh;
-    padding-top:280px; /* Important */
+    padding-top:0;
     background-attachment:scroll;
 }
 
