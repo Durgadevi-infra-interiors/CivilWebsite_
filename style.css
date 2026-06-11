@@ -241,6 +241,12 @@ color:#d4a54c !important;
     text-align:center;
     color:white;
 }
+.menu-toggle{
+    display:none;
+    font-size:30px;
+    cursor:pointer;
+    color:#d4a54c;
+}
 
 .hero-content{
 max-width:800px;
