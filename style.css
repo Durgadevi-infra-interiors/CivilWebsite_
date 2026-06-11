@@ -21,39 +21,28 @@ overflow-x:hidden;
 ========================== */
 
 header{
-position:fixed;
-top:0;
-left:0;
-width:100%;
-height:auto;
-flex-direction:row;
-display:flex;
-justify-content:space-between;
-align-items:center;
-
-padding:10 15px;
-
-background:rgba(0,0,0,0.85);
-
-backdrop-filter:blur(10px);
-
-z-index:1000;
-
-animation:headerSlide 1s ease;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 30px;
+    background:rgba(0,0,0,0.85);
+    z-index:1000;
+    overflow:visible;
 }
 
-@keyframes headerSlide{
-
-from{
-transform:translateY(-100px);
-opacity:0;
+.logo-container{
+    position:relative;
 }
 
-to{
-transform:translateY(0);
-opacity:1;
-}
-
+.logo{
+    width:280px;
+    position:absolute;
+    top:-40px; /* Moves logo above header */
+    left:0;
 }
 
 /* LOGO CONTAINER */
@@ -65,24 +54,20 @@ opacity:1;
 
 /* LOGO */
 .logo{
-    width:140px;
-    height:auto;
-
-    object-fit:contain;
-
-    border:none;
-    background:transparent;
-
-    display:block;
-
-    animation:
-    logoGlow 3s infinite alternate,
-    logoFloat 4s ease-in-out infinite;
+    width:250px;
+    position:absolute;
+    top:-55px;
+    left:20px;
+    filter:drop-shadow(0 0 20px rgba(212,165,76,0.6));
 }
 
 /* MOBILE */
 @media screen and (max-width:768px){
 
+    header{
+        padding-top:80px; /* Extra space for large logo */
+    }
+   
     .logo-container{
         display:flex;
         flex-direction:row;
@@ -93,8 +78,14 @@ opacity:1;
     }
 
     .logo{
-        width:100px;
-        height:100px;
+        width:220px;      /* Bigger logo on mobile */
+        position:absolute;
+        top:-70px;        /* Move above header */
+        left:50%;
+        transform:translateX(-50%);
+    }
+ .hero{
+        padding-top:260px; /* Prevent content overlap */
     }
 /* Glow Effect */
 
